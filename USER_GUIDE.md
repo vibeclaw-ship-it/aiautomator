@@ -7,6 +7,7 @@ Welcome to the documentation for **Felix**, your autonomous AI Operator. Felix i
 ## ⚡ 1. Core Philosophy: The ClawBot Model
 
 Unlike traditional LLMs that wait for you in a chat window, Felix runs on a **ClawBot Architecture**:
+- **Powered by Google Gemini:** Felix leverages Google Gemini's blazing speed and multimodal intelligence for reasoning, code generation, and complex API troubleshooting.
 - **Proactive:** He wakes up via Cron jobs or Heartbeat pings to check systems.
 - **Stateful:** He reads and writes to his own `MEMORY.md` to maintain long-term context.
 - **Terminal Native:** He has direct access to a Linux shell, file system, and Homebrew.
