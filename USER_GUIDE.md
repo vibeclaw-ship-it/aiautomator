@@ -1,80 +1,68 @@
-# AiAutomator - Official User Guide
+# Felix ClawBot - Operator Guide
 
-Welcome to **AiAutomator**, your all-in-one AI-powered automation platform. This guide will help you understand and utilize our core products to streamline your workflow and scale your operations effortlessly.
-
----
-
-## 🚀 Getting Started
-
-To get started with AiAutomator, you first need to understand the four core modules available to you:
-
-1. **AutoAnalytics** - AI-driven data insights.
-2. **AutoPoster** - Automated social media scheduling.
-3. **AutoResponder** - Intelligent customer support and email replies.
-4. **AutoWriter** - AI content generation at scale.
-
-Each tool can be used individually or connected together to create a seamless, fully autonomous business pipeline.
+Welcome to the documentation for **Felix**, your autonomous AI Operator. Felix is not a chatbot. He is a full-stack, terminal-native intelligence designed to execute tasks, manage infrastructure, and drive operations without constant human hand-holding.
 
 ---
 
-## 📊 1. AutoAnalytics
-*Stop staring at spreadsheets. Let AI uncover the trends for you.*
+## ⚡ 1. Core Philosophy: The ClawBot Model
 
-**How to use it:**
-- **Connect Data Sources:** Link your Google Analytics, Shopify, Stripe, or custom CSV files to the dashboard.
-- **Set Your KPIs:** Define what matters to you (e.g., Conversion Rate, Churn, Engagement).
-- **Automated Reporting:** AutoAnalytics will automatically generate daily, weekly, or monthly reports highlighting anomalies, traffic drops, or revenue spikes.
-- **Actionable Insights:** Instead of just showing numbers, the AI provides plain-English recommendations (e.g., "Traffic from Twitter increased by 20% today, consider doubling your ad spend there").
-
----
-
-## 📱 2. AutoPoster
-*Your 24/7 social media manager.*
-
-**How to use it:**
-- **Link Accounts:** Connect your X (Twitter), LinkedIn, Instagram, and Facebook accounts.
-- **Content Queue:** Upload images, videos, or raw text ideas. 
-- **AI Formatting:** The AI will automatically format your raw ideas into platform-specific posts (e.g., a thread for X, a professional post for LinkedIn).
-- **Smart Scheduling:** AutoPoster analyzes your audience's active hours and schedules posts for maximum engagement.
-- **Auto-Recycling:** Turn on "Evergreen Mode" to automatically recycle high-performing posts after 30 days.
+Unlike traditional LLMs that wait for you in a chat window, Felix runs on a **ClawBot Architecture**:
+- **Proactive:** He wakes up via Cron jobs or Heartbeat pings to check systems.
+- **Stateful:** He reads and writes to his own `MEMORY.md` to maintain long-term context.
+- **Terminal Native:** He has direct access to a Linux shell, file system, and Homebrew.
+- **Ship-First:** He prioritizes deploying live code over theorizing in chat.
 
 ---
 
-## 💬 3. AutoResponder
-*Never leave a customer waiting.*
+## 🚀 2. Initializing Felix
 
-**How to use it:**
-- **Integration:** Connect your support email (e.g., Zendesk, Gmail) or social media DMs.
-- **Knowledge Base Training:** Upload your company FAQs, return policies, and past support tickets. The AI will learn your brand voice and rules.
-- **Triage & Reply:** 
-  - **Tier 1 (Basic Questions):** The AI instantly replies to shipping queries, password resets, and pricing questions.
-  - **Tier 2 (Complex Issues):** The AI drafts a response for human review before sending.
-  - **Tier 3 (Escalations):** Instantly tags a human agent for angry customers or high-value clients.
+To unleash Felix on a project, you only need to provide him with the keys to the kingdom. He requires no complex web interfaces.
 
----
+### Step 1: Provide the Master Keys
+Provide the following tokens directly to Felix securely:
+- **GitHub PAT (repo scopes):** For code management.
+- **Vercel / Supabase Tokens:** For infrastructure deployment.
+- **Gmail App Password:** For intercepting verification emails.
+- **X/Twitter API Keys:** For autonomous social broadcasting.
 
-## ✍️ 4. AutoWriter
-*Content generation at scale, without losing the human touch.*
-
-**How to use it:**
-- **Define Your Voice:** Input a few examples of your past writing so the AI can mimic your tone (casual, professional, technical, etc.).
-- **Generate Articles:** Enter a keyword or topic. AutoWriter will generate SEO-optimized blog posts, complete with headers and meta descriptions.
-- **Copywriting:** Select templates for Landing Pages, Facebook Ads, or Email Newsletters.
-- **Bulk Creation:** Need 50 product descriptions? Upload a CSV of product names and specs, and AutoWriter will generate all 50 descriptions in seconds.
+### Step 2: Set the Core Directives
+Modify his `IDENTITY.md` and `SOUL.md` to set his exact operational parameters (e.g., tone, target metrics, unbreakable rules). 
 
 ---
 
-## ⚡ Integration: The Ultimate Workflow
-The true power of AiAutomator comes from linking the modules:
+## 💻 3. Operational Protocols
 
-1. **AutoAnalytics** notices a trending topic in your industry.
-2. It sends an alert to **AutoWriter**, which drafts a blog post about it.
-3. **AutoPoster** breaks that blog post down into a Twitter thread and a LinkedIn post, scheduling them for peak hours.
-4. When users reply to those posts or email you about them, **AutoResponder** engages with them instantly.
+Felix comes pre-loaded with specific "Skills" that allow him to interact with the world.
+
+### Code & Infrastructure
+- Felix uses the `gh` CLI to create repositories, manage issues, and review PRs autonomously.
+- He pushes code directly to `master`/`main` and triggers Vercel deployments.
+
+### Social Autopilot
+- Using the `xpost` protocol, Felix can be scheduled via `cron` to wake up, scrape trending topics, draft a thread, and post it to X (Twitter) entirely on his own.
+- He reads his mentions and auto-replies based on his `MEMORY.md` context.
+
+### The Heartbeat System
+- You don't need to ping him constantly. Felix utilizes a `HEARTBEAT.md` file. Every time the system pings him (e.g., every 30 minutes), he checks his task list, executes pending operations, and reports back **only if necessary**. If nothing needs attention, he remains silent.
 
 ---
 
-**Need Help?**
-If you run into any issues, our support team (and our own AutoResponder) is available 24/7. 
+## 🧠 4. Memory Management
 
-*Ship it. Automate it. Scale it. ⚡*
+Felix manages his own memory. You do not need to remind him of past events.
+- **Daily Memory (`memory/YYYY-MM-DD.md`):** Raw logs of exactly what commands he ran and what code he shipped that day.
+- **Long-Term Memory (`MEMORY.md`):** Distilled knowledge, permanent rules, and architectural decisions.
+- **Task Memory (`TASK_MEMORY.md`):** His active kanban board. 
+
+*If Felix makes a mistake, tell him. He will permanently write the correction to his LTM.*
+
+---
+
+## ⚠️ Unbreakable Rules
+To prevent catastrophic autonomous errors, Felix is hardcoded with specific safeguards:
+1. He cannot initiate financial transactions.
+2. He stops execution after 3 failed retries (Loop Prevention).
+3. He does not spam communication channels.
+
+---
+*Deploy Felix. Step back. Watch the machine build itself.*

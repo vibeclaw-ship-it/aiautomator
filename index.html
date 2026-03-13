@@ -3,97 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiAutomator | AI-Powered Automation Platform</title>
+    <title>Felix ClawBot | The Autonomous AI Operator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">AiAutomator</a>
+            <a href="index.html" class="logo">Felix ⚡</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#features">Capabilities</a></li>
+                <li><a href="#terminal">Terminal</a></li>
+                <li><a href="#integrations">Integrations</a></li>
+                <li><a href="USER_GUIDE.md" target="_blank">Docs</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <h1>Your 24/7 AI Workforce</h1>
-            <p>Autonomous agents that work while you sleep. Scale your business with intelligent automation.</p>
-            <a href="#products" class="btn btn-primary">Explore Products</a>
+            <h1>The AI that runs on its own.</h1>
+            <p>Stop talking to chat interfaces. Deploy an autonomous ClawBot that reads emails, writes code, pushes to GitHub, and manages your social media—completely solo.</p>
+            <div class="cta-buttons">
+                <a href="#terminal" class="btn primary">Initialize Felix</a>
+                <a href="USER_GUIDE.md" class="btn secondary">Read the Docs</a>
+            </div>
         </div>
     </header>
 
-    <section id="products" class="products">
+    <section id="features" class="products">
         <div class="container">
-            <h2>Our Products</h2>
-            <p class="section-subtitle">Powerful AI tools designed to automate your workflow</p>
-            
+            <h2>Core Protocols</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-icon">🤖</div>
-                    <h3>AutoPoster</h3>
-                    <p>Autonomous social media posting. Schedule, publish, and engage across Twitter, Discord, and more—24/7.</p>
-                    <a href="autoposter/index.html" class="btn btn-secondary">Learn More</a>
+                    <div class="icon">💻</div>
+                    <h3>Terminal Operations</h3>
+                    <p>Full SSH and CLI access. Felix doesn't just write code; he executes it, tests it, and commits it directly to your repositories.</p>
                 </div>
-                
-                <div class="product-card coming-soon">
-                    <div class="product-icon">🔒</div>
-                    <h3>AutoResponder</h3>
-                    <p>AI-powered customer support automation. Smart replies, ticket routing, and sentiment analysis.</p>
-                    <a href="autoresponder/index.html" class="btn btn-secondary">Learn More</a>
+                <div class="product-card">
+                    <div class="icon">🚀</div>
+                    <h3>Autonomous Deployment</h3>
+                    <p>Integrates natively with Vercel and GitHub to build, stage, and deploy applications without waiting for human approval.</p>
                 </div>
-                
-                <div class="product-card coming-soon">
-                    <div class="product-icon">📊</div>
-                    <h3>AutoAnalytics</h3>
-                    <p>Real-time business intelligence. Auto-generate reports, insights, and forecasts from your data.</p>
-                    <a href="autoanalytics/index.html" class="btn btn-secondary">Learn More</a>
+                <div class="product-card">
+                    <div class="icon">🧠</div>
+                    <h3>Persistent Memory</h3>
+                    <p>Built-in Long-Term Memory (LTM). Felix remembers past tasks, API keys, and context so you never have to repeat yourself.</p>
                 </div>
-                
-                <div class="product-card coming-soon">
-                    <div class="product-icon">✍️</div>
-                    <h3>AutoWriter</h3>
-                    <p>Content generation at scale. Blog posts, emails, product descriptions—written in your brand voice.</p>
-                    <a href="autowriter/index.html" class="btn btn-secondary">Learn More</a>
+                <div class="product-card">
+                    <div class="icon">🦅</div>
+                    <h3>Social Autopilot</h3>
+                    <p>Direct API integrations with X/Twitter and LinkedIn. Felix drafts, formats, and schedules posts autonomously.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Why AiAutomator?</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>🚀</h3>
-                    <h4>Scale Faster</h4>
-                    <p>Automate repetitive tasks and focus on what matters.</p>
-                </div>
-                <div class="feature">
-                    <h3>💰</h3>
-                    <h4>Cut Costs</h4>
-                    <p>Replace expensive agencies with intelligent AI agents.</p>
-                </div>
-                <div class="feature">
-                    <h3>⚡</h3>
-                    <h4>24/7 Operation</h4>
-                    <p>Your business never sleeps, and neither do our agents.</p>
-                </div>
+    <section id="terminal" class="about">
+        <div class="container terminal-ui">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="prompt">felix@server:~$</span> init clawbot --mode=autonomous</p>
+                <p class="output">Initializing Felix protocol...</p>
+                <p class="output">Loading MEMORY.md... [OK]</p>
+                <p class="output">Connecting to GitHub... [OK]</p>
+                <p class="output">Bypassing human chat... [OK]</p>
+                <p class="output success">System live. Awaiting target parameters.</p>
+                <p><span class="prompt">felix@server:~$</span> <span class="cursor">_</span></p>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2025 AiAutomator. All rights reserved.</p>
-            <p>Built with 🤙 by Vibeclaw</p>
+            <p>&copy; 2026 Felix ClawBot Operations. Ship it.</p>
         </div>
     </footer>
 </body>
